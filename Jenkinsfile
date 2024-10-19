@@ -14,9 +14,9 @@ pipeline
 		
 		stage("Create File")
 		{
-			script
+			steps
 			{
-				steps
+				script
 				{
 					dir("MyFolder")
 					{
@@ -29,9 +29,9 @@ pipeline
 		
 		stage("Write File")
 		{
-			script
+			steps
 			{
-				steps
+				script
 				{
 					dir("MyFolder")
 					{
