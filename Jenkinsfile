@@ -5,8 +5,11 @@ pipeline
 	{
 		stage("Create Directory")
 		{
-			sh 'mkdir MyFolder'
-			echo "Folder Has Been Created"
+			steps
+			{
+				sh 'mkdir MyFolder'
+				echo "Folder Has Been Created"
+			}
 		}
 		
 		stage("Create File")
